@@ -1,0 +1,4 @@
+baseURL = 'http://manuel.software/'
+languageCode = 'en-us'
+title = 'Manuel Sousa - Software Engineer'
+theme = 'ananke'
