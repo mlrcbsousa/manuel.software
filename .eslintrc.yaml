@@ -1,0 +1,28 @@
+root: true
+extends:
+  - plugin:json/recommended
+  - plugin:vue/vue3-recommended
+  - eslint:recommended
+  - '@vue/eslint-config-typescript/recommended'
+  - '@vue/eslint-config-prettier'
+plugins:
+  - import
+rules:
+  no-console:
+    - error
+    - allow:
+        - warn
+        - error
+  eqeqeq: 2
+  vue/max-attributes-per-line:
+    - error
+    - singleline: 6
+      multiline: 3
+  # as we expect to use async components inside vue <Suspense> component, we can expose data after awaits
+  vue/no-expose-after-await: 0
+  vue/no-empty-component-block: 1
+  '@typescript-eslint/no-unused-vars': 2
+  import/newline-after-import: 2
+  vue/no-dupe-keys: 0
+env:
+  vue/setup-compiler-macros: true
