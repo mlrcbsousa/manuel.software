@@ -9,6 +9,7 @@
               <div class="buttons">
                 <!-- <router-link to="/restaurants" class="button is-primary">See all food</router-link>
                 <router-link to="/restaurants?new=true" class="button">Add new food</router-link> -->
+                <a href="/ManuelSousa_CV.pdf" title="Download CV">download</a>
               </div>
             </div>
             <div

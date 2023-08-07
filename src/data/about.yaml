@@ -1,0 +1,45 @@
+basics:
+  name: Manuel Sousa
+  label: Software Engineer
+  picture: /images/manuel.jpg
+  email: mlrcbsousa@gmail.com
+  socials: (32) 473 123 816
+  summary: >
+    Software Engineer with experience leading projects and teams. Current Stack: Vue 3, GraphQL, gRPC, Node. 42 school student (19 Brussels). Former Chef.
+  location:
+    city: Brussels
+    country: Belgium
+  profiles:
+    - network: GitHub
+      username: mlrcbsousa
+      url: https://github.com/mlrcbsousa
+    - network: LinkedIn
+      username: mlrcbsousa
+      url: https://www.linkedin.com/in/mlrcbsousa
+skills:
+  - TypeScript
+  - C
+  - C++
+  - Vue 3
+  - Vite
+  - VitePress
+  - GraphQL
+  - gRPC
+  - Redis
+  - Ruby on Rails
+  - Postgres
+  - Docker
+  - Concourse
+  - Vitest
+  - RSpec
+  - Playwright
+  - HTML
+  - CSS
+  - Javascript
+languages:
+  - language: Portuguese
+    fluency: Native
+  - language: English
+    fluency: Native
+  - language: French
+    fluency: Fluent

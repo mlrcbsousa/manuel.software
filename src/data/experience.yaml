@@ -1,0 +1,48 @@
+experience:
+  - company: Keyrock
+    position: Software Engineer
+    website: https://www.keyrock.eu/
+    startDate: Oct 2022
+    highlights:
+      - Spearhead the successful implementation of the Post Trade Settlement feature, facilitate a credit line enhancement of 3 million dollars.
+      - Implement a meta service into the trading system's microservices, thereby increasing domain knowledge connectivity.
+      - Create UI for a new proprietary trading system from scratch, while balancing multiple responsibilities and facilitating effective knowledge transfer to ensure seamless workflow continuity.
+  - company: Metarina
+    position: Software Engineer
+    website: https://www.metarina.com/
+    startDate: Jul 2023
+    highlights:
+      - Execute critical, high-profile features across the web application.
+  - company: Abbove (PaxFamilia)
+    position: VP Engineering
+    website: https://www.abbove.com/
+    startDate: Apr 2021
+    endDate: Sep 2022
+    highlights:
+      - Developed hiring process to grow and re-skill the engineering team. Travelled overseas to onboard. Created internal documentation database.
+      - Created attractive complex UI features, e.g. a questionnaire builder that results in a report with specific widgets.
+      - Improved internal workflows, outlining product specification standards, code quality. Improved CICD, made it clear to stakeholders and increased the amount of deploys.
+  - company: Abbove (PaxFamilia)
+    position: Lead Software Engineer
+    website: https://www.abbove.com/
+    startDate: Jan 2020
+    endDate: Apr 2021
+    highlights:
+      - Worked on product integrations with SaaS providers, XS2A and PSD2 integrations using PaxFamilia's AISP license.
+      - Lead and managed a developer team, from onboarding and training, task management, delegation, and code review.
+      - Implemented internal library for a bank client custom integration.
+  - company: Coloc Housing
+    position: Software Engineer
+    website: https://www.colochousing.com/
+    startDate: Jan 2020
+    endDate: Apr 2020
+    highlights:
+      - Delivered high visibility and impact features across web platform.
+  - company: Abbove (PaxFamilia)
+    position: Software Engineer
+    website: https://www.abbove.com/
+    startDate: Jan 2019
+    endDate: Jan 2020
+    highlights:
+      - Developed new data upload API for a major bank client, boosting app uploads from 1 to 500+ HNWI families weekly, utilising TDD.
+      - Created a testing suite using self-developed tools, increasing app test coverage from 0% to over 40% on a 30k+ line codebase.
