@@ -6,7 +6,10 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "lib": ["ES2017", "ES2018.Promise", "DOM", "DOM.Iterable"]
+    "lib": ["ES2017", "ES2018.Promise", "DOM", "DOM.Iterable"],
+    "types": [
+      "@modyfi/vite-plugin-yaml/modules"
+      ],
   },
   "references": [
     {

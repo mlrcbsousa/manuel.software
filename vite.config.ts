@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import yaml from '@modyfi/vite-plugin-yaml'
 
 import { resolve } from 'path'
 
@@ -8,7 +9,7 @@ const buildSourcesPath = resolve(__dirname, buildSourceDir)
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [yaml(), vue()],
   css: {
     preprocessorOptions: {
       sass: {

@@ -1,37 +1,27 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
-</script>
-
 <template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
-  </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
-    starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/vuejs/language-tools" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <main>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered reverse-columns">
+            <div class="column is-10-mobile is-10-tablet is-5-desktop is-5-widescreen is-5-fullhd">
+              <h1 class="title titled is-1 mb-6">Helping people track all the delicious things they want to eat.</h1>
+              <div class="buttons">
+                <!-- <router-link to="/restaurants" class="button is-primary">See all food</router-link>
+                <router-link to="/restaurants?new=true" class="button">Add new food</router-link> -->
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              class="column is-10-mobile is-10-tablet is-4-desktop is-7-widescreen is-4-fullhd is-offset-1-fullhd"
+            >
+              <figure class="image is-square">
+                <img src="/images/manuel.jpg" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
