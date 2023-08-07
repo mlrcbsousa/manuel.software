@@ -1,6 +1,4 @@
 sections:
-  # - name: About
-  #   id: about
   - name: Experience
     id: experience
   - name: Education

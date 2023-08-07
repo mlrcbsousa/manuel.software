@@ -1,28 +1,17 @@
+<script setup lang="ts">
+import AboutSection from '@/components/AboutSection.vue'
+import ExperienceSection from '@/components/ExperienceSection.vue'
+import EducationSection from '@/components/EducationSection.vue'
+import SkillsSection from '@/components/SkillsSection.vue'
+import LanguagesSection from '@/components/LanguagesSection.vue'
+import ProjectsSection from '@/components/ProjectsSection.vue'
+</script>
+
 <template>
-  <main>
-    <section class="hero is-white is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns is-vcentered reverse-columns">
-            <div class="column is-10-mobile is-10-tablet is-5-desktop is-5-widescreen is-5-fullhd">
-              <h1 class="title titled is-1 mb-6">Helping people track all the delicious things they want to eat.</h1>
-              <div class="buttons">
-                <!-- <router-link to="/restaurants" class="button is-primary">See all food</router-link>
-                <router-link to="/restaurants?new=true" class="button">Add new food</router-link> -->
-                <a href="/ManuelSousa_CV.pdf" title="Download CV">download</a>
-              </div>
-            </div>
-            <div
-              data-aos="fade-right"
-              class="column is-10-mobile is-10-tablet is-4-desktop is-7-widescreen is-4-fullhd is-offset-1-fullhd"
-            >
-              <figure class="image is-square">
-                <img src="/images/manuel.jpg" />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <AboutSection />
+  <ExperienceSection />
+  <EducationSection />
+  <SkillsSection />
+  <LanguagesSection />
+  <ProjectsSection />
 </template>
