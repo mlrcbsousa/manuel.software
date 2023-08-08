@@ -1,4 +1,4 @@
-export type NavbarItem = {
+export type Section = {
   id: string
   name: string
 }
@@ -12,6 +12,7 @@ type Profile = {
   network: string
   username: string
   url: string
+  icon: string
 }
 
 export type Basics = {

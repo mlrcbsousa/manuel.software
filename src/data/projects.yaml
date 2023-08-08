@@ -1,7 +1,7 @@
 projects:
   - title: Libft
     summary: >
-      Recode a few functions of the C standard library as well as some other utility functions that will be used during the whole 42 cursus.
+      Recode a few functions of the C standard library and other utility functions that are used during the 42 cursus.
     keywords:
       - C
       - Unix
@@ -19,7 +19,6 @@ projects:
     keywords:
       - VM
       - shell
-      - Debian
     github: https://github.com/mlrcbsousa/Born2beRoot
   - title: get_next_line
     summary: May it be a file, stdin, or even a network connection, there is always a need to read content line by line.
@@ -47,10 +46,9 @@ projects:
     keywords:
       - C
       - minilibX
-      - 2D graphics
     github: https://github.com/mlrcbsousa/fract-ol
   - title: Philosophers
-    summary: Eat, Sleep, Spaghetti, repeat. Learning how threads work by precisely timing a group of philosophers on when to pick up forks and eat spaghetti without dying from hunger.
+    summary: Eat, Sleep, Spaghetti, repeat. Learning how threads work by precisely timing a group of philosophers.
     keywords:
       - C
       - Threads
@@ -66,7 +64,6 @@ projects:
     keywords:
       - C
       - minilibX
-      - Ray-casting
     github: https://github.com/mlrcbsousa/cub3d
   - title: webserv
     summary: HTTP server implementation. Testable with a real browser.
@@ -77,21 +74,18 @@ projects:
   - title: Inception
     summary: Docker compose LAMP stack Wordpress system administration. Using Nginx, PHP and MariaDB.
     keywords:
-      - Docker compose
-      - Nginx
-      - Wordpress
+      - Docker
+      - shell
     github: https://github.com/mlrcbsousa/Inception
   - title: ft_containers
     summary: Recode vector, stack, map and set C++ containers.
     keywords:
       - C++
       - Templates
-      - Data structures
     github: https://github.com/mlrcbsousa/ft_containers
   - title: ft_transcendence
     summary: Website for the mighty Pong game.
     keywords:
-      - TypeScript
       - Vue 3
       - Nest.js
     # website: https://42transcendence.com/

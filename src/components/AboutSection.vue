@@ -1,30 +1,48 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import data from '@/data/about.yaml'
 import type { Basics } from '@/types'
+import { toRefs } from 'vue'
 
-const about = ref<Basics>(data.about)
+const props = defineProps<{ about: Basics }>()
+const { about } = toRefs(props)
 </script>
 
 <template>
-  <section id="about">
-    <h1>{{ about.name }}</h1>
-    <p>{{ about.title }}</p>
-    <figure class="image">
-      <img class="is-rounded" :src="about.picture" alt="Profile Photo" />
-    </figure>
-    <p>{{ about.email }}</p>
-    <p>{{ about.phone }}</p>
-    <p>{{ about.summary }}</p>
-    <p>{{ about.location.city }}, {{ about.location.country }}</p>
-    <div class="buttons">
-      <a href="/ManuelSousa_CV.pdf" title="Download CV">
-        <button class="button">Download CV</button>
-      </a>
+  <section id="about" class="section">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <h1 class="title is-1">{{ about.name }}</h1>
+        <p class="subtitle is-3 mb-4">{{ about.title }}</p>
+        <p class="is-size-5 mb-4">{{ about.summary }}</p>
+        <div class="buttons mb-4">
+          <a href="/ManuelSousa_CV.pdf" title="Download CV" class="button mr-4 is-outlined is-link">
+            <span class="icon-text">
+              <span class="download-cv-text">Download</span>
+              <span class="icon download-cv-icon">
+                <i class="fa-regular fa-file-pdf"></i>
+              </span>
+            </span>
+          </a>
+          <a
+            v-for="profile in about.profiles"
+            :key="profile.network"
+            class="button is-white has-text-link"
+            :alt="profile.network"
+            :href="profile.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="icon fa-brands is-size-4" :class="profile.icon"></i>
+          </a>
+        </div>
+        <p class="heading">{{ about.email }}</p>
+        <p class="heading">{{ about.phone }}</p>
+        <p class="heading">{{ about.location.city }}, {{ about.location.country }}</p>
+      </div>
+      <div data-aos="fade-right" class="column is-two-fifths profile-photo">
+        <figure class="image">
+          <img class="is-rounded" :src="about.picture" alt="Profile Photo" />
+        </figure>
+      </div>
     </div>
-    <template v-for="profile in about.profiles" :key="profile.id">
-      <p>{{ profile.username }}</p>
-      <a :alt="profile.network" :href="profile.url" target="_blank" rel="noopener noreferrer">{{ profile.network }}</a>
-    </template>
   </section>
 </template>

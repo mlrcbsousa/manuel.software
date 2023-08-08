@@ -7,17 +7,17 @@ const experience = ref<Experience[]>(data.experience)
 </script>
 
 <template>
-  <section id="experience">
-    <h1>Experience</h1>
-    <template v-for="job in experience" :key="`${job.company}-${job.position}`">
-      <h2>
+  <section id="experience" class="section">
+    <h1 class="title mb-6">Experience</h1>
+    <div v-for="job in experience" :key="`${job.company}-${job.position}`" class="content">
+      <small class="heading">{{ job.startDate }} - {{ job.endDate ?? 'Present' }}</small>
+      <p class="title is-4">{{ job.position }}</p>
+      <p class="subtitle mb-0">
         <a :href="job.website" target="_blank" rel="noopener noreferrer">{{ job.company }}</a>
-      </h2>
-      <p>{{ job.position }}</p>
-      <p>{{ job.startDate }} - {{ job.endDate ?? 'Present' }}</p>
-      <ul v-for="highlight in job.highlights" :key="highlight">
-        <li>{{ highlight }}</li>
+      </p>
+      <ul class="mt-1">
+        <li v-for="highlight in job.highlights" :key="highlight">{{ highlight }}</li>
       </ul>
-    </template>
+    </div>
   </section>
 </template>

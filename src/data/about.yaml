@@ -13,6 +13,12 @@ about:
     - network: GitHub
       username: mlrcbsousa
       url: https://github.com/mlrcbsousa
+      icon: fa-github
     - network: LinkedIn
       username: mlrcbsousa
       url: https://www.linkedin.com/in/mlrcbsousa
+      icon: fa-linkedin
+    - network: Twitter
+      username: mlrcbsousa
+      url: https://www.twitter.com/mlrcbsousa
+      icon: fa-x-twitter

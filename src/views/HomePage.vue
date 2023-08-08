@@ -5,13 +5,29 @@ import EducationSection from '@/components/EducationSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import LanguagesSection from '@/components/LanguagesSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
+import ContactSection from '@/components/ContactSection.vue'
+
+import { ref } from 'vue'
+import data from '@/data/about.yaml'
+import type { Basics } from '@/types'
+
+const about = ref<Basics>(data.about)
 </script>
 
 <template>
-  <AboutSection />
-  <ExperienceSection />
-  <EducationSection />
-  <SkillsSection />
-  <LanguagesSection />
-  <ProjectsSection />
+  <main class="container is-max-desktop">
+    <AboutSection :about="about" />
+    <ExperienceSection />
+    <div class="section">
+      <div class="columns">
+        <EducationSection />
+        <div class="column">
+          <SkillsSection />
+          <LanguagesSection />
+        </div>
+      </div>
+    </div>
+    <ProjectsSection />
+    <ContactSection :email="about.email" />
+  </main>
 </template>

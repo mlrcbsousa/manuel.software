@@ -1,28 +1,26 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import data from '@/data/sections.yaml'
-import type { NavbarItem } from '@/types'
+import dataAbout from '@/data/about.yaml'
+import dataSections from '@/data/sections.yaml'
+import type { Section, Basics } from '@/types'
 
-defineProps<{ tagline?: string }>()
-
-const sections = ref<NavbarItem[]>(data.sections)
+const about = ref<Basics>(dataAbout.about)
+const sections = ref<Section[]>(dataSections.sections)
 </script>
 
 <template>
   <nav class="navbar has-shadow">
     <div class="navbar-brand">
-      <a href="#about" class="navbar-item">Manuel Sousa - Software Engineer</a>
+      <a href="#about" class="navbar-item">
+        <strong>{{ about.name }}</strong>
+        &nbsp;- {{ about.title }}
+      </a>
     </div>
     <div class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item">
-          <small>{{ tagline }}</small>
-        </div>
-      </div>
       <div class="navbar-end">
-        <div v-for="navItem in sections" :key="`nav-${navItem.name}`" class="navbar-item">
-          <a :href="`#${navItem.id}`">{{ navItem.name }}</a>
-        </div>
+        <a v-for="section in sections" :key="`nav-${section.name}`" class="navbar-item" :href="`#${section.id}`">{{
+          section.name
+        }}</a>
       </div>
     </div>
   </nav>
