@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, toRefs } from 'vue'
+import { getMailtoHref } from '@/utils/mailto'
 
 const props = defineProps<{ email: string }>()
+const { email } = toRefs(props)
 
 const subject = ref('')
 const message = ref('')
-
-// TODO: test this
-const mailtoContent = computed(() => {
-  const subjectEncoded = encodeURIComponent(subject.value)
-  const messageEncoded = encodeURIComponent(message.value)
-  return `mailto:${props.email}?subject=${subjectEncoded}&body=${messageEncoded}`
-})
+const href = getMailtoHref(email, message, subject)
 </script>
 
 <template>
@@ -31,7 +27,7 @@ const mailtoContent = computed(() => {
     </div>
     <div class="field">
       <div class="control">
-        <a :href="mailtoContent">
+        <a :href="href">
           <button class="button is-link">Send Email</button>
         </a>
       </div>
