@@ -15,6 +15,26 @@ const sections = ref<Section[]>(dataSections.sections)
         <strong>{{ about.name }}</strong>
         &nbsp;- {{ about.title }}
       </a>
+      <div class="navbar-item dropdown is-hidden-tablet is-right is-hoverable">
+        <div class="dropdown-trigger">
+          <button class="button is-white" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span class="icon">
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a
+              v-for="section in sections"
+              :key="`nav-${section.name}`"
+              class="dropdown-item"
+              :href="`#${section.id}`"
+              >{{ section.name }}</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <div class="navbar-menu">
       <div class="navbar-end">

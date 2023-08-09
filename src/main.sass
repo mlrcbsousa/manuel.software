@@ -7,10 +7,12 @@ $section-padding-desktop: 1.8rem 3rem
 
 $family-sans-serif: "Nunito Sans", sans-serif
 
+$navbar-breakpoint: 769px
+
 @import "../node_modules/bulma/bulma.sass"
 
 #experience > div
-  @include block(2.4rem)
+  +block(2.4rem)
 
 #education > div
   margin-top: 2.4rem
@@ -22,19 +24,18 @@ $family-sans-serif: "Nunito Sans", sans-serif
 .project-summary
   height: 7rem
 
-  @include until($tablet)
+  +until($tablet)
     height: fit-content
 
-.download-cv-text
-  @include until($tablet)
-    display: none
-
 #about > div > div:nth-child(1) > div > a.button.mr-4.is-outlined.is-link > i
-  @include until($tablet)
+  +until($tablet)
     margin-left: 0
     margin-right: 0
 
 .profile-photo
-  @include until($tablet)
+  +until($tablet)
     height: 17rem
     width: 17rem
+
+.navbar-item.dropdown
+  +ltr-property("margin", auto, false)

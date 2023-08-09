@@ -15,7 +15,7 @@ const { about } = toRefs(props)
         <p class="is-size-5 mb-5">{{ about.summary }}</p>
         <div class="buttons mb-5">
           <a href="/ManuelSousa_CV.pdf" title="Download CV" class="button mr-4 is-outlined is-link">
-            <span class="download-cv-text">Download</span>
+            <span class="is-hidden-mobile">Download</span>
             <i class="icon fa-regular fa-file-pdf"></i>
           </a>
           <a
