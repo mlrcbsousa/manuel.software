@@ -2,14 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap')
 
-$section-padding: 1.8rem 1.5rem
-$section-padding-desktop: 1.8rem 3rem
+// My variables
+$section-padding-y: 1.8rem
+
+// Bulma variables
+$section-padding: $section-padding-y 1.5rem
+$section-padding-desktop: $section-padding-y 3rem
 
 $family-sans-serif: "Nunito Sans", sans-serif
 
 $navbar-breakpoint: 769px
 
 @import "../node_modules/bulma/bulma.sass"
+
+#about
+  padding-top: calc($navbar-height + $section-padding-y * 1.5)
 
 #experience > div
   +block(2.4rem)
