@@ -45,5 +45,6 @@ const { about } = toRefs(props)
 
 <style lang="sass" scoped>
 #about
-  margin-top: 4rem
+  margin-top: 2rem
+  padding-top: 4rem
 </style>

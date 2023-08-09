@@ -26,14 +26,8 @@ const projects = ref<Project[]>(dataProjects.projects)
               <div class="mt-1">
                 <span class="icon-text">
                   <span class="icon">
-                    <a
-                      class="is-size-5"
-                      alt="Source Code"
-                      :href="project.github"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fa-brands fa-github"></i>
+                    <a alt="Source Code" :href="project.github" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-code"></i>
                     </a>
                   </span>
                   <span>
