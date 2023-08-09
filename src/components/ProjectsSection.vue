@@ -20,7 +20,7 @@ const projects = ref<Project[]>(dataProjects.projects)
             </h2>
             <h2 v-else class="title is-4 project-title">{{ project.title }}</h2>
             <div class="subtitle is-6">
-              <div class="summary" :label="project.summary" :data-full-text="project.summary">
+              <div class="project-summary" :label="project.summary" :data-full-text="project.summary">
                 {{ project.summary }}
               </div>
               <div class="mt-1">

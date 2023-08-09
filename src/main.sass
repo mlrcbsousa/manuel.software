@@ -1,4 +1,8 @@
 @charset "utf-8"
+
+$section-padding: 1.8rem 1.5rem
+$section-padding-desktop: 1.8rem 3rem
+
 @import "../node_modules/bulma/bulma.sass"
 
 #experience > div
@@ -11,7 +15,7 @@
 #languages
   margin-top: calc($gap * 1.3)
 
-.summary
+.project-summary
   height: 7rem
 
   @include until($tablet)
@@ -21,7 +25,7 @@
   @include until($tablet)
     display: none
 
-#about > div > div:nth-child(1) > div > a.button.mr-4.is-outlined.is-link > span > span.icon.download-cv-icon
+#about > div > div:nth-child(1) > div > a.button.mr-4.is-outlined.is-link > i
   @include until($tablet)
     margin-left: 0
     margin-right: 0

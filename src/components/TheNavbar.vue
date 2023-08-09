@@ -9,7 +9,7 @@ const sections = ref<Section[]>(dataSections.sections)
 </script>
 
 <template>
-  <nav class="navbar has-shadow">
+  <nav class="navbar has-shadow is-fixed-top">
     <div class="navbar-brand">
       <a href="#about" class="navbar-item">
         <strong>{{ about.name }}</strong>

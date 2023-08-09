@@ -12,15 +12,11 @@ const { about } = toRefs(props)
       <div class="column">
         <h1 class="title is-1">{{ about.name }}</h1>
         <p class="subtitle is-3 mb-4">{{ about.title }}</p>
-        <p class="is-size-5 mb-4">{{ about.summary }}</p>
-        <div class="buttons mb-4">
+        <p class="is-size-5 mb-5">{{ about.summary }}</p>
+        <div class="buttons mb-5">
           <a href="/ManuelSousa_CV.pdf" title="Download CV" class="button mr-4 is-outlined is-link">
-            <span class="icon-text">
-              <span class="download-cv-text">Download</span>
-              <span class="icon download-cv-icon">
-                <i class="fa-regular fa-file-pdf"></i>
-              </span>
-            </span>
+            <span class="download-cv-text">Download</span>
+            <i class="icon fa-regular fa-file-pdf"></i>
           </a>
           <a
             v-for="profile in about.profiles"
@@ -46,3 +42,8 @@ const { about } = toRefs(props)
     </div>
   </section>
 </template>
+
+<style lang="sass" scoped>
+#about
+  margin-top: 4rem
+</style>
