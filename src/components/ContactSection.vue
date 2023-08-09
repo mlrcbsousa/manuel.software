@@ -14,15 +14,21 @@ const href = getMailtoHref(email, message, subject)
   <section id="contact" class="section">
     <h1 class="title">Get in touch</h1>
     <div class="field">
-      <label class="label" for="name">Subject</label>
-      <div class="control">
+      <label class="label">Subject</label>
+      <div class="control has-icons-right">
         <input v-model="subject" class="input" type="text" placeholder="Your subject" />
+        <span class="icon is-right">
+          <a class="delete" @click="subject = ''"></a>
+        </span>
       </div>
     </div>
     <div class="field">
-      <label class="label" for="message">Message</label>
-      <div class="control">
+      <label class="label">Message</label>
+      <div class="control has-icons-right">
         <textarea v-model="message" class="textarea" placeholder="Your message"></textarea>
+        <span class="icon is-right">
+          <a class="delete" @click="message = ''"></a>
+        </span>
       </div>
     </div>
     <div class="field">
