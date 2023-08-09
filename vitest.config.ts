@@ -16,6 +16,7 @@ export default mergeConfig(
         include: ['src/**/*.ts'],
         exclude: ['src/mocks', '**/types', '**/types.ts', '**/config', '**/*.vue', 'src/main.ts', '**/*.test.*'],
       },
+      environment: 'happy-dom',
     },
   }),
 )
