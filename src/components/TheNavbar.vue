@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import dataAbout from '@/data/about.yaml'
 import dataSections from '@/data/sections.yaml'
 import type { Section, Basics } from '@/types'
-import { scrollToSection } from '@/utils/scroll'
+import { scrollToElement } from '@/utils/scroll'
 
 const about = ref<Basics>(dataAbout.about)
 const sections = ref<Section[]>(dataSections.sections)
@@ -12,7 +12,7 @@ const sections = ref<Section[]>(dataSections.sections)
 <template>
   <nav class="navbar has-shadow is-fixed-top">
     <div class="navbar-brand">
-      <a href="#about" class="navbar-item">
+      <a class="navbar-item" @click.prevent="scrollToElement('about')">
         <strong>{{ about.name }}</strong>
         &nbsp;- {{ about.title }}
       </a>
@@ -30,7 +30,7 @@ const sections = ref<Section[]>(dataSections.sections)
               v-for="section in sections"
               :key="`nav-${section.name}`"
               class="dropdown-item"
-              @click.prevent="scrollToSection(section.id)"
+              @click.prevent="scrollToElement(section.id)"
               >{{ section.name }}</a
             >
           </div>
@@ -43,7 +43,7 @@ const sections = ref<Section[]>(dataSections.sections)
           v-for="section in sections"
           :key="`nav-${section.name}`"
           class="navbar-item"
-          @click.prevent="scrollToSection(section.id)"
+          @click.prevent="scrollToElement(section.id)"
           >{{ section.name }}</a
         >
       </div>

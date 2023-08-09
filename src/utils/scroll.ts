@@ -1,4 +1,4 @@
-export const scrollToSection = (id: string) => {
+export const scrollToElement = (id: string) => {
   const element = document.getElementById(id)
   const navbarHeight = 3.25 * 16
 

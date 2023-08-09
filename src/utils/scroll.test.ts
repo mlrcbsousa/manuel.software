@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, afterEach, beforeEach } from 'vitest'
-import { scrollToSection } from '@/utils/scroll'
+import { scrollToElement } from '@/utils/scroll'
 
-describe('scrollToSection function', () => {
+describe('scrollToElement', () => {
   let mockElement: any
 
   beforeEach(() => {
@@ -24,7 +24,7 @@ describe('scrollToSection function', () => {
     const navbarHeight = 3.25 * 16
     const expectedTop = mockElement.getBoundingClientRect().top + window.scrollY - navbarHeight
 
-    scrollToSection(id)
+    scrollToElement(id)
 
     expect(window.scrollTo).toHaveBeenCalledWith({
       top: expectedTop,
@@ -34,7 +34,7 @@ describe('scrollToSection function', () => {
 
   it('should not call window.scrollTo if element is not found', () => {
     document.getElementById = vi.fn().mockReturnValue(null)
-    scrollToSection('nonexistentId')
+    scrollToElement('nonexistentId')
     expect(window.scrollTo).not.toHaveBeenCalled()
   })
 })
