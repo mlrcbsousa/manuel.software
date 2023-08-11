@@ -19,3 +19,9 @@ yarn dev
 ```sh
 yarn build
 ```
+
+### Run Test Suite
+
+```sh
+yarn test
+```
