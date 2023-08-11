@@ -2,6 +2,8 @@
 
 Resume website using [Vue 3](https://vuejs.org/) and [Bulma](https://bulma.io/)
 
+Deployed at [manuel.software](https://www.manuel.software)
+
 ## Project Setup
 
 ```sh
