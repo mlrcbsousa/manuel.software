@@ -1,6 +1,6 @@
 # manuel.software
 
-Resume website
+Resume website using [Vue 3](https://vuejs.org/) and [Bulma](https://bulma.io/)
 
 ## Project Setup
 
