@@ -26,6 +26,7 @@ $navbar-breakpoint: 769px
 
 #languages
   padding-top: $section-padding-y
+
   +mobile
     padding-top: $section-padding-y * 1.7
 
@@ -35,15 +36,23 @@ $navbar-breakpoint: 769px
   +mobile
     height: fit-content
 
-#about > div > div:nth-child(1) > div > a.button.mr-4.is-outlined.is-link > i
+.navbar-item.dropdown
+  +ltr-property("margin", auto, false)
+
+.profile-photo
+  +from($tablet)
+    max-width: 17rem
+
+.about-columns
+  flex-direction: column-reverse
+
+  +mobile
+    padding: 0rem 7%
+
+  +from($tablet)
+    flex-direction: row-reverse
+
+#about > div > div:nth-child(2) > div > a.button.mr-4.is-outlined.is-link > i
   +mobile
     margin-left: 0
     margin-right: 0
-
-.profile-photo
-  +mobile
-    height: 17rem
-    width: 17rem
-
-.navbar-item.dropdown
-  +ltr-property("margin", auto, false)

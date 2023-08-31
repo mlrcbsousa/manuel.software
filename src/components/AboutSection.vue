@@ -8,7 +8,12 @@ const { about } = toRefs(props)
 
 <template>
   <section id="about" class="section">
-    <div class="columns is-vcentered">
+    <div class="columns about-columns">
+      <div data-aos="fade-right" class="column is-full-mobile is-two-fifths-tablet">
+        <figure class="image">
+          <img class="is-rounded profile-photo" :src="about.picture" alt="Profile Photo" />
+        </figure>
+      </div>
       <div class="column">
         <h1 class="title is-1">{{ about.name }}</h1>
         <p class="subtitle is-3 mb-4">{{ about.title }}</p>
@@ -33,11 +38,6 @@ const { about } = toRefs(props)
         <p class="heading">{{ about.email }}</p>
         <p class="heading">{{ about.phone }}</p>
         <p class="heading">{{ about.location.city }}, {{ about.location.country }}</p>
-      </div>
-      <div data-aos="fade-right" class="column is-two-fifths profile-photo">
-        <figure class="image">
-          <img class="is-rounded" :src="about.picture" alt="Profile Photo" />
-        </figure>
       </div>
     </div>
   </section>
