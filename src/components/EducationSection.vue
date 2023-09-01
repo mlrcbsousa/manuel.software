@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import dataEducation from '@/data/education.yaml'
+import data from '@/data/education.yaml'
 import type { Education } from '@/types'
 
-const education = ref<Education[]>(dataEducation.education)
+const education = ref<Education[]>(data.education)
 </script>
 
 <template>

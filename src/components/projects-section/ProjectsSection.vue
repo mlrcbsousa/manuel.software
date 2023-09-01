@@ -1,16 +1,46 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import dataProjects from '@/data/projects.yaml'
 import type { Project } from '@/types'
+import getFilteredProjects from '@/components/projects-section/filtered-projects'
 
 const projects = ref<Project[]>(dataProjects.projects)
+const searchTerm = ref('')
+const selectedKeyword = ref('')
+
+const allKeywords = computed(() => {
+  const keywords = new Set<string>()
+  projects.value.forEach((p) => p.keywords.forEach((k) => keywords.add(k)))
+  return [...keywords]
+})
+
+const filteredProjects = getFilteredProjects(projects, searchTerm, selectedKeyword)
 </script>
 
 <template>
   <section id="projects" class="section">
     <h1 class="title mb-6">Projects</h1>
+    <div class="field is-grouped">
+      <div class="control has-icons-left">
+        <div class="select">
+          <select v-model="selectedKeyword">
+            <option value="">Keyword</option>
+            <option v-for="keyword in allKeywords" :key="keyword">{{ keyword }}</option>
+          </select>
+        </div>
+        <span class="icon is-left">
+          <a class="delete" @click="selectedKeyword = ''"></a>
+        </span>
+      </div>
+      <div class="control is-expanded has-icons-right">
+        <input v-model="searchTerm" class="input" type="text" placeholder="Search projects" />
+        <span class="icon is-right">
+          <a class="delete" @click="searchTerm = ''"></a>
+        </span>
+      </div>
+    </div>
     <div class="columns is-multiline">
-      <div v-for="project in projects" :key="project.title" class="column is-one-third">
+      <div v-for="project in filteredProjects" :key="project.title" class="column is-one-third">
         <div class="card">
           <div class="card-content">
             <h2 v-if="project.website" class="title is-4 project-title">
