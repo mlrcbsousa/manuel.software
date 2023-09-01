@@ -2,7 +2,7 @@ import { describe, it, expect, vi, afterEach, beforeEach } from 'vitest'
 import { scrollToElement } from '@/utils/scroll'
 
 describe('scrollToElement', () => {
-  let mockElement: any
+  let mockElement: { getBoundingClientRect: () => { top: number } } | null = null
 
   beforeEach(() => {
     mockElement = {
