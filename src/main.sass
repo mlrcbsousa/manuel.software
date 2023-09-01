@@ -3,18 +3,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap')
 
 // My variables
-$section-padding-y: 1.8rem
+$c-section-padding-y: 1.8rem
 
 // Bulma variables
-$section-padding: $section-padding-y 1.5rem
-$section-padding-desktop: $section-padding-y 3rem
+$section-padding: $c-section-padding-y 1.5rem
+$section-padding-desktop: $c-section-padding-y 3rem
 $family-sans-serif: "Nunito Sans", sans-serif
 $navbar-breakpoint: 769px
 
 @import "../node_modules/bulma/bulma.sass"
 
+$c-top-offset: calc($navbar-height + $c-section-padding-y * 1.5)
+
+.navbar-item.dropdown
+  +ltr-property("margin", auto, false)
+
 #about
-  padding-top: calc($navbar-height + $section-padding-y * 1.5)
+  padding-top: $c-top-offset
+
+  +mobile
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+
+#about > div > div:nth-child(2) > div > a.button.mr-4.is-outlined.is-link > i
+  +mobile
+    margin-left: 0
+    margin-right: 0
+
+.about-columns
+  flex-direction: column
+
+  +mobile
+    max-width: 33rem
+    padding: 0rem 7%
+
+  +from($tablet)
+    flex-direction: row-reverse
+
+.photo-column
+  display: flex
+  justify-content: center
+
+.profile-photo
+  max-width: 17rem
 
 #experience > div,
 #education > div
@@ -22,37 +55,16 @@ $navbar-breakpoint: 769px
 
 #skills
   +mobile
-    padding-top: $section-padding-y
+    padding-top: $c-section-padding-y
 
 #languages
-  padding-top: $section-padding-y
+  padding-top: $c-section-padding-y
 
   +mobile
-    padding-top: $section-padding-y * 1.7
+    padding-top: $c-section-padding-y * 1.7
 
 .project-summary
   height: 7rem
 
   +mobile
     height: fit-content
-
-.navbar-item.dropdown
-  +ltr-property("margin", auto, false)
-
-.profile-photo
-  +from($tablet)
-    max-width: 17rem
-
-.about-columns
-  flex-direction: column-reverse
-
-  +mobile
-    padding: 0rem 7%
-
-  +from($tablet)
-    flex-direction: row-reverse
-
-#about > div > div:nth-child(2) > div > a.button.mr-4.is-outlined.is-link > i
-  +mobile
-    margin-left: 0
-    margin-right: 0

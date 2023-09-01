@@ -9,7 +9,7 @@ const { about } = toRefs(props)
 <template>
   <section id="about" class="section">
     <div class="columns about-columns">
-      <div data-aos="fade-right" class="column is-full-mobile is-two-fifths-tablet">
+      <div data-aos="fade-right" class="column is-full-mobile is-two-fifths-tablet photo-column">
         <figure class="image">
           <img class="is-rounded profile-photo" :src="about.picture" alt="Profile Photo" />
         </figure>
