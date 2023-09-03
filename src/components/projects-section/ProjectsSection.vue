@@ -32,9 +32,9 @@ const filteredProjects = getFilteredProjects(projects, searchTerm, selectedKeywo
           <a class="delete" @click="selectedKeyword = ''"></a>
         </span>
       </div>
-      <div class="control is-expanded has-icons-right">
+      <div class="control is-expanded has-icons-left">
         <input v-model="searchTerm" class="input" type="text" placeholder="Search projects" />
-        <span class="icon is-right">
+        <span class="icon is-left">
           <a class="delete" @click="searchTerm = ''"></a>
         </span>
       </div>
