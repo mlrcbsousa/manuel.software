@@ -27,3 +27,37 @@ yarn build
 ```sh
 yarn test
 ```
+
+Get coverage report:
+
+```sh
+yarn coverage
+```
+
+Open `coverage/index.html` in a browser.
+
+### Run Linter
+
+```sh
+yarn lint
+```
+
+### Outdated packages
+
+List
+
+```sh
+yarn outdated
+```
+
+Upgrade
+
+```sh
+yarn upgrade --latest
+```
+
+### Local docker debug build
+
+```sh
+docker build -t manuel.sousa .
+```
