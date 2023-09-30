@@ -1,13 +1,15 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "extends": "@vue/tsconfig/tsconfig.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "baseUrl": ".",
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["./src/*"]
     },
     "lib": ["ES2017", "ES2018.Promise", "DOM", "DOM.Iterable"],
     "types": [
+      "node",
       "@modyfi/vite-plugin-yaml/modules"
     ],
   },
