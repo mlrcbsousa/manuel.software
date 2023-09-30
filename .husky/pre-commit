@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+echo "----PRE COMMIT START----"
 yarn lint
 yarn build
 yarn coverage
+echo "----PRE COMMIT END----"
