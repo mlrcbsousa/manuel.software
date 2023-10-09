@@ -1,6 +1,7 @@
 import { ref } from 'vue'
-import type { Project } from '@/types'
 import { expect, it, describe } from 'vitest'
+
+import type { Project } from '@/types'
 import getFilteredProjects from '@/components/projects-section/filtered-projects'
 
 describe('getFilteredProjects', () => {

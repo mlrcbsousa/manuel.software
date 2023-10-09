@@ -1,8 +1,8 @@
+import { resolve } from 'path'
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import yaml from '@modyfi/vite-plugin-yaml'
-
-import { resolve } from 'path'
 
 const buildSourceDir = './src'
 const buildSourcesPath = resolve(__dirname, buildSourceDir)

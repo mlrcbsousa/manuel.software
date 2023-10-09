@@ -1,5 +1,6 @@
 import { ref } from 'vue'
 import { describe, expect, it } from 'vitest'
+
 import { getMailtoHref } from '@/utils/mailto'
 
 describe('getMailtoHref', () => {

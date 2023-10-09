@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+
 import data from '@/data/skills.yaml'
 
 const skills = ref<string[]>(data.skills)

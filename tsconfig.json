@@ -10,7 +10,8 @@
     "lib": ["ES2017", "ES2018.Promise", "DOM", "DOM.Iterable"],
     "types": [
       "node",
-      "@modyfi/vite-plugin-yaml/modules"
+      "@modyfi/vite-plugin-yaml/modules",
+      "vitest/globals"
     ],
   },
   "references": [

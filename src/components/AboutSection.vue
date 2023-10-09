@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import type { Basics } from '@/types'
 import { toRefs } from 'vue'
+
+import type { Basics } from '@/types'
 
 const props = defineProps<{ about: Basics }>()
 const { about } = toRefs(props)

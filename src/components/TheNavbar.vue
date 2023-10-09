@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+
 import dataAbout from '@/data/about.yaml'
 import dataSections from '@/data/sections.yaml'
 import type { Section, Basics } from '@/types'

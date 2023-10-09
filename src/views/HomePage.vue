@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 import AboutSection from '@/components/AboutSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
@@ -6,8 +8,6 @@ import SkillsSection from '@/components/SkillsSection.vue'
 import LanguagesSection from '@/components/LanguagesSection.vue'
 import ProjectsSection from '@/components/projects-section/ProjectsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
-
-import { ref } from 'vue'
 import data from '@/data/about.yaml'
 import type { Basics } from '@/types'
 

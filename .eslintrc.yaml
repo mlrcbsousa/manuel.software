@@ -7,6 +7,7 @@ extends:
   - '@vue/eslint-config-prettier'
 plugins:
   - import
+  - testing-library
 rules:
   no-console:
     - error
@@ -18,11 +19,18 @@ rules:
     - error
     - singleline: 6
       multiline: 3
-  # as we expect to use async components inside vue <Suspense> component, we can expose data after awaits
-  vue/no-expose-after-await: 0
-  vue/no-empty-component-block: 1
-  '@typescript-eslint/no-unused-vars': 2
-  import/newline-after-import: 2
-  vue/no-dupe-keys: 0
-env:
-  vue/setup-compiler-macros: true
+  # as we use vite-plugin-pages and need plain components name for nice urls
+  vue/multi-word-component-names: off
+  vue/no-empty-component-block: error
+  '@typescript-eslint/no-unused-vars': error
+  import/newline-after-import: error
+  import/order: [error, { 'newlines-between': always }]
+  '@typescript-eslint/no-non-null-assertion': error
+overrides:
+  - files:
+      - src/**/*.test.ts
+      - src/**/*.vue.test.ts
+    extends:
+      - plugin:testing-library/vue
+    rules:
+      '@typescript-eslint/no-non-null-assertion': off

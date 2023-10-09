@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, toRefs } from 'vue'
+
 import { getMailtoHref } from '@/utils/mailto'
 
 const props = defineProps<{ email: string }>()

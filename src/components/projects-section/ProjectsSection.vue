@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+
 import dataProjects from '@/data/projects.yaml'
 import type { Project } from '@/types'
 import getFilteredProjects from '@/components/projects-section/filtered-projects'

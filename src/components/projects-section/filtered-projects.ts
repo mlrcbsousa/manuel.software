@@ -1,4 +1,5 @@
 import { type Ref, computed } from 'vue'
+
 import type { Project } from '@/types'
 
 export default function getFilteredProjects(
