@@ -6,7 +6,7 @@ import ExperienceSection from '@/components/ExperienceSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import LanguagesSection from '@/components/LanguagesSection.vue'
-import ProjectsSection from '@/components/projects-section/ProjectsSection.vue'
+// import ProjectsSection from '@/components/projects-section/ProjectsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import data from '@/data/about.yaml'
 import type { Basics } from '@/types'
@@ -27,7 +27,7 @@ const about = ref<Basics>(data.about)
         </div>
       </div>
     </div>
-    <ProjectsSection />
+    <!-- <ProjectsSection /> -->
     <ContactSection :email="about.email" />
   </main>
 </template>
