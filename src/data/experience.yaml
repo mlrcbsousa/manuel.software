@@ -1,18 +1,25 @@
 experience:
   - company: Keyrock
+    position: Senior Software Engineer
+    website: https://www.keyrock.eu/
+    startDate: Jan 2024
+    highlights:
+      - Develop a customisable trading system with dynamic widgets and intuitive UI, enabling traders to personalise their layouts.
+      - Integrate over 10 backend APIs, ensuring high performance and seamless data display.
+  - company: Metarina
+    position: Senior Software Engineer
+    website: https://www.metarina.com/
+    startDate: Jul 2023
+    endDate: Apr 2024
+    highlights:
+      - Implemented Billing feature, separating Charges from Invoicing, which facilitated fee structure and improved flexibility, increasing revenue streams.
+  - company: Keyrock
     position: Software Engineer
     website: https://www.keyrock.eu/
     startDate: Oct 2022
+    endDate: Dec 2023
     highlights:
-      - Spearhead the successful implementation of the Post Trade Settlement feature, facilitate a credit line enhancement of 3 million dollars.
-      - Implement a meta service into the trading system's microservices, thereby increasing domain knowledge connectivity.
-      - Create UI for a new proprietary trading system from scratch, while balancing multiple responsibilities and facilitating effective knowledge transfer to ensure seamless workflow continuity.
-  - company: Metarina
-    position: Software Engineer
-    website: https://www.metarina.com/
-    startDate: Jul 2023
-    highlights:
-      - Execute critical, high-profile features across the web application.
+      - Spearheaded the successful implementation of the Post Trade Settlement feature, which facilitated a credit line enhancement of 3 million dollars.
   - company: Abbove (PaxFamilia)
     position: VP Engineering
     website: https://www.abbove.com/

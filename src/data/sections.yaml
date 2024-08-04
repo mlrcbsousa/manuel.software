@@ -3,7 +3,7 @@ sections:
     id: experience
   - name: Education
     id: education
-  - name: Projects
-    id: projects
+  # - name: Projects
+  #   id: projects
   - name: Contact
     id: contact
