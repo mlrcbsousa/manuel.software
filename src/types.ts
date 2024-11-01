@@ -44,15 +44,16 @@ export type Education = {
   website: string
   area: string
   studyType: string
-  startDate: string
+  startDate?: string
   endDate?: string
+  highlights: string[]
 }
 
 export type Experience = {
   company: string
   position: string
   website: string
-  startDate: string
+  startDate?: string
   endDate?: string
   highlights: string[]
 }
