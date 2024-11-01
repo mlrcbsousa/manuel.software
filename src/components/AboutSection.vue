@@ -36,9 +36,17 @@ const { about } = toRefs(props)
             <i class="icon fa-brands is-size-4" :class="profile.icon"></i>
           </a>
         </div>
-        <p class="heading">{{ about.email }}</p>
-        <p class="heading">{{ about.phone }}</p>
-        <p class="heading">{{ about.location.city }}, {{ about.location.country }}</p>
+        <div class="columns is-full-mobile is-desktop">
+          <div class="column p-0 pl-3 pt-2 has-text-centered-desktop">
+            <p class="heading">{{ about.email }}</p>
+          </div>
+          <div class="column p-0 pl-3 pt-2 has-text-centered-desktop">
+            <p class="heading">{{ about.phone }}</p>
+          </div>
+          <div class="column p-0 pl-3 pt-2 has-text-centered-desktop">
+            <p class="heading">{{ about.location.city }}, {{ about.location.country }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -4,52 +4,60 @@ experience:
     website: https://www.keyrock.eu/
     startDate: Jan 2024
     highlights:
-      - Develop a customisable trading system with dynamic widgets and intuitive UI, enabling traders to personalise their layouts.
-      - Integrate over 10 backend APIs, ensuring high performance and seamless data display.
+      - Develop customizable Options trading systems with dynamic widgets and intuitive UI, enable traders to personalize their layouts and consume calculations data and market data with split second precision and reactivity.
+      - Integrate 10+ backend APIs, ensuring high performance and seamless data display. Successfully fix several performance issues derived from large amounts of data being polled every half a second where every excess in memory and network use had to be scrutinized.
+      - Document every aspect of the development process, creating 20+ guides and technical documents that aid in onboarding and knowledge transfer across global teams.
+      - Conduct workshops on Options trading theory, gRPC usage, and widget library implementations, enhancing team expertise and fostering a culture of continuous learning.
+      - Collaborate asynchronously with team members across Europe, Americas, and Australia, maintaining high standards of communication through detailed ticketing comments and code reviews.
   - company: Metarina
     position: Senior Software Engineer
     website: https://www.metarina.com/
     startDate: Jul 2023
     endDate: Apr 2024
     highlights:
-      - Implemented Billing feature, separating Charges from Invoicing, which facilitated fee structure and improved flexibility, increasing revenue streams.
+      - Implemented Billing system extension, separating charges from invoicing, which facilitated fee structure and improved flexibility, increasing revenue streams.
+      - Developed complex features for boaters searching for marinas, and marina admins managing their marina, utilizing Tailwind CSS, Stimulus JS, Hotwire and Ruby on Rails.
   - company: Keyrock
     position: Software Engineer
     website: https://www.keyrock.eu/
     startDate: Oct 2022
     endDate: Dec 2023
     highlights:
-      - Spearheaded the successful implementation of the Post Trade Settlement feature, which facilitated a credit line enhancement of 3 million dollars.
+      - Spearheaded and executed the successful implementation of the Post Trade Settlement feature, which facilitated a credit line enhancement of 3 million dollars.
+      - Achieved 80% test coverage on main applications by implementing rigorous testing practices, ensuring high reliability and stability in production environments.
+      - Managed project workflows using ticketing tools, aligning development tasks with trader specifications and QA feedback to deliver precise and efficient solutions.
+      - Enhanced code quality through tight code review systems and CI/CD pipelines, ensuring all changes are reversible, changelogged, and versioned for seamless deployments.
   - company: Abbove (PaxFamilia)
     position: VP Engineering
     website: https://www.abbove.com/
     startDate: Apr 2021
     endDate: Sep 2022
     highlights:
-      - Developed hiring process to grow and re-skill the engineering team. Travelled overseas to onboard. Created internal documentation database.
-      - Created attractive complex UI features, e.g. a questionnaire builder that results in a report with specific widgets.
-      - Improved internal workflows, outlining product specification standards, code quality. Improved CICD, made it clear to stakeholders and increased the amount of deploys.
+      - Led workshops and training sessions to upskill team members, fostering a collaborative and high-performing engineering culture. Traveled overseas to onboard 2 new joiners. Created an internal documentation database with 20+ articles and guides.
+      - Created 100+ attractive complex UI features and respective backend implementations, e.g. a questionnaire builder that results in a report with specific widgets.
+      - Improved internal workflows, outlining product specification standards, code quality, reporting and feedback. Improved CICD, made it clear to stakeholders, increasing the amount of deploys and boosting trust and alignment.
   - company: Abbove (PaxFamilia)
     position: Lead Software Engineer
     website: https://www.abbove.com/
     startDate: Jan 2020
     endDate: Apr 2021
     highlights:
-      - Worked on product integrations with SaaS providers, XS2A and PSD2 integrations using PaxFamilia's AISP license.
-      - Lead and managed a developer team, from onboarding and training, task management, delegation, and code review.
-      - Implemented internal library for a bank client custom integration.
+      - Worked on product integrations with SaaS providers, XS2A and PSD2 integrations using PaxFamilia's AISP license, connecting 10+ banks to the application.
+      - Lead and managed a developer team of 4+, from onboarding and training, task management, delegation, and code review. Streamlined development processes by introducing standardized coding practices and tools.
   - company: Coloc Housing
     position: Software Engineer
     website: https://www.colochousing.com/
     startDate: Jan 2020
     endDate: Apr 2020
     highlights:
-      - Delivered high visibility and impact features across web platform.
+      - Integrated customer support systems and considered API integrations for signing rental contracts, improving user experience and operational efficiency.
+      - Collaborated closely with cross-functional teams to align product offerings with market needs, contributing to company growth.
   - company: Abbove (PaxFamilia)
     position: Software Engineer
     website: https://www.abbove.com/
     startDate: Jan 2019
     endDate: Jan 2020
     highlights:
-      - Developed new data upload API for a major bank client, boosting app uploads from 1 to 500+ HNWI families weekly, utilising TDD.
-      - Created a testing suite using self-developed tools, increasing app test coverage from 0% to over 40% on a 30k+ line codebase.
+      - Developed new data upload API for a major bank client, boosting app uploads from 1 to 500+ HNWI families weekly, utilizing TDD, Swagger docs and JSON Schema API conventions.
+      - Created a testing suite using self-developed tools, increasing app test coverage from 0% to over 40% on a 30k+ line codebase. This resulted in reduction of production bugs by catching them earlier in the deployment pipeline.
+      - Collaborated with cross-functional teams, including external bank team members, to gather requirements and deliver solutions.
