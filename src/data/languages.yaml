@@ -1,7 +1,7 @@
 languages:
   - name: English
     fluency: Native
-  - name: Portuguese
-    fluency: Native
   - name: French
+    fluency: Fluent
+  - name: Portuguese
     fluency: Fluent

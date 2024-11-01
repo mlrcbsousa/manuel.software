@@ -1,0 +1,20 @@
+experience_project:
+  - company: 42 project in C++
+    position: Webserv
+    website: https://github.com/gleal42/webserv
+    endDate: Sep 2022
+    highlights:
+      - Group project with 2 other students, developed a HTTP 1.1 web server from scratch with standard library native functions, included key features like request parsing, response generation, and protocol standards compliance, enhancing understanding of server architecture.
+      - Achieved a performance benchmark comparable to Nginx for basic static content delivery and implemented Common Gateway Interface functionality tested on PHP requests.
+  - company: 42 project in C
+    position: Cub3d
+    website: https://github.com/mlrcbsousa/cub3d
+    endDate: May 2022
+    highlights:
+      - Implemented a 3D graphics engine using 2D ray casting techniques, taking the first steps to recreate the Wolfenstein game, showcasing proficiency in low-level graphics programming.
+  - company: 42 project in C
+    position: Minishell
+    website: https://github.com/mlrcbsousa/minishell
+    endDate: Mar 2022
+    highlights:
+      - Developed a shell program with command execution capabilities, environment variable handling, input/output redirection, and pipeline execution.

@@ -3,14 +3,22 @@ education:
     website: https://campus19.be/
     area: Computer Science
     startDate: Apr 2023
+    highlights:
+      - Internship done at Keyrock while already working there full time. Turned the Complex Layouts with customizable Widgets implementation into an internship project to present after 6 months on a short YouTube video essay.
+      - Engage in peer-to-peer learning and project-based education, enhancing practical skills and collaborative abilities.
   - institution: 42 Lisboa
     website: https://www.42lisboa.com/en/
     area: Computer Science
     startDate: Feb 2021
     endDate: Apr 2023
+    highlights:
+      - Part of the first group to finish the Common Core curriculum at the 42 Lisboa school, this consisted of various challenging projects developed without external libraries, demonstrating problem-solving skills and perseverance.
+      - Completed while already working in Belgium full-time non-remote, had to use any free time to complete projects and holidays to travel to Lisbon to evaluate other students and turn in projects.
   - institution: Le Wagon
     website: https://www.lewagon.com/
     area: Web Development
     studyType: Bootcamp
     startDate: Oct 2018
     endDate: Dec 2018
+    highlights:
+      - Collaborated with a team to deliver a fully functional application within tight deadlines. Ambitious final project connecting Trello Sprint boards to an app producing KPI metrics for agile teams.

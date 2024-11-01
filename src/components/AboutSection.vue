@@ -20,7 +20,7 @@ const { about } = toRefs(props)
         <p class="subtitle is-3 mb-4">{{ about.title }}</p>
         <p class="is-size-5 mb-5">{{ about.summary }}</p>
         <div class="buttons mb-5">
-          <a href="/ManuelSousa_CV.pdf" title="Download CV" class="button mr-4 is-outlined is-link">
+          <a href="/Manuel_Sousa_CV.pdf" title="Download CV" class="button mr-4 is-outlined is-link">
             <span class="is-hidden-mobile">Download</span>
             <i class="icon fa-regular fa-file-pdf"></i>
           </a>
@@ -36,9 +36,17 @@ const { about } = toRefs(props)
             <i class="icon fa-brands is-size-4" :class="profile.icon"></i>
           </a>
         </div>
-        <p class="heading">{{ about.email }}</p>
-        <p class="heading">{{ about.phone }}</p>
-        <p class="heading">{{ about.location.city }}, {{ about.location.country }}</p>
+        <div class="columns is-full-mobile is-desktop">
+          <div class="column p-0 pl-3 pt-2 has-text-centered-desktop">
+            <p class="heading">{{ about.email }}</p>
+          </div>
+          <div class="column p-0 pl-3 pt-2 has-text-centered-desktop">
+            <p class="heading">{{ about.phone }}</p>
+          </div>
+          <div class="column p-0 pl-3 pt-2 has-text-centered-desktop">
+            <p class="heading">{{ about.location.city }}, {{ about.location.country }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
