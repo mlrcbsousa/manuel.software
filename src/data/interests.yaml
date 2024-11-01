@@ -1,0 +1,17 @@
+interests:
+  - name: Cooking
+    icon: fa-kitchen-set
+  - name: Foodie
+    icon: fa-utensils
+  - name: Traveled to 30+ countries
+    icon: fa-plane-departure
+  - name: Meditation
+    icon: fa-brain
+  - name: Yoga
+    icon: fa-person-praying
+  - name: Swimming
+    icon: fa-person-swimming
+  - name: Cycling
+    icon: fa-person-biking
+  - name: Powerlifting
+    icon: fa-dumbbell

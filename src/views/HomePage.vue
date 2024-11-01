@@ -6,6 +6,7 @@ import ExperienceSection from '@/components/ExperienceSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import LanguagesSection from '@/components/LanguagesSection.vue'
+import InterestsSection from '@/components/InterestsSection.vue'
 // import ProjectsSection from '@/components/projects-section/ProjectsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import dataAbout from '@/data/about.yaml'
@@ -34,6 +35,7 @@ const experienceLeadership = ref<Experience[]>(dataExperienceLeadership.experien
         </div>
         <div class="column">
           <LanguagesSection />
+          <InterestsSection />
         </div>
       </div>
     </div>

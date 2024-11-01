@@ -1,18 +1,28 @@
 skills:
   - TypeScript
+  - Ruby
   - C
   - C++
+  - Python
+  - Rust
   - Vue 3
-  - Vite
   - VitePress
-  - GraphQL
-  - gRPC
-  - Redis
   - Ruby on Rails
-  - Postgres
-  - Docker
+  - GraphQL
+  - REST
+  - gRPC
+  - PostgreSQL
+  - Redis
+  - CouchDB
   - Vitest
   - RSpec
+  - Jest
+  - Playwright
+  - Cypress
+  - Vite
+  - Docker
+  - Concourse
+  - AWS
   - HTML
   - CSS
-  - Javascript
+  - JavaScript
